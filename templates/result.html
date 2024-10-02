@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ operation }} Result</title>
+</head>
+<body>
+    <h1>{{ operation }} Result</h1>
+    <p>{{ result }}</p>
+    <form action="/download" method="post">
+        <input type="hidden" name="text" value="{{ result }}">
+        <button type="submit">Download Result</button>
+    </form>
+    <a href="/">Back to Home</a>
+</body>
+</html>
